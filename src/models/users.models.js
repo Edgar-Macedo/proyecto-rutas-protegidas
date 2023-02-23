@@ -12,7 +12,7 @@ const Users = db.define('users', {
         allowNull: false,
         validate: {
             notEmpty: {
-                msg: 'firstName: required file'
+                msg: 'firstName: required field'
             },
             len: [1, 255]
         }
@@ -22,7 +22,7 @@ const Users = db.define('users', {
         allowNull: false,
         validate: {
             notEmpty: {
-                msg: 'lastName: required file'
+                msg: 'lastName: required field'
             },
             len: [1, 255]
         }
@@ -33,7 +33,7 @@ const Users = db.define('users', {
         unique: true,
         validate: {
             notEmpty: {
-                msg: 'email: required file'
+                msg: 'email: required field'
             },
             len: [1, 255],
             isEmail: true
@@ -44,7 +44,7 @@ const Users = db.define('users', {
         allowNull: false,
         validate: {
             notEmpty: {
-                msg: 'password: required file'
+                msg: 'password: required field'
             },
             len: [1, 255]
         }
